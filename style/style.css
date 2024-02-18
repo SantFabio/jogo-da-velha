@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stage,
+h1 {
+  margin-top: 20px;
+}
+
+.square {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 2px solid gray;
+  background-color: beige;
+}
+
+.x {
+  position: relative;
+}
+
+.x:after {
+  font-size: 50px;
+  position: absolute;
+  content: "\274C";
+  line-height: 100px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.o {
+  position: relative;
+}
+
+.o:after {
+  font-size: 50px;
+  position: absolute;
+  content: "\2B55";
+  line-height: 100px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes anim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.resertButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+  width: 316px;
+  height: 50px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: #F92F60;
+  color: #ffffff;
+  cursor: pointer;
+  animation-name: anim;
+  animation-duration: 500ms;
+}
